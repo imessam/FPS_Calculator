@@ -63,4 +63,3 @@ class FPS(ABC):
         self.frame_time = 0.0
 
         return 
-

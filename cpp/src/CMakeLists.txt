@@ -7,6 +7,7 @@ project(FPSCalculator VERSION 1.0
 ## Libraries setup
 
 set(FPS_CALCULATOR_SOURCES
+
   ${CMAKE_CURRENT_LIST_DIR}/fps.cpp
 )
 

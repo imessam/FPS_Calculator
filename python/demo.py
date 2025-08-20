@@ -10,7 +10,7 @@ def main():
     current_fps = 0.0
     avg_fps = 0.0
 
-    cap = cv2.VideoCapture("../examples/fifa.mp4")
+    cap = cv2.VideoCapture("../examples/test.mp4")
 
     if not cap.isOpened():
         print("Error opening video stream or file")

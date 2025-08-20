@@ -11,13 +11,11 @@ int main(int argc, char** argv) {
 
     float currentFps, avgFps;
 
-    cv::VideoCapture cap{"../examples/fifa.mp4"};
+    cv::VideoCapture cap{"../examples/test.mp4"};
     if (!cap.isOpened()) {
         std::cerr << "Error opening video stream or file" << std::endl;
         return -1;
     }
-
-    // cap.set(cv::CAP_PROP_FPS, 30);
 
     cv::Mat frame;
 
@@ -30,7 +28,9 @@ int main(int argc, char** argv) {
             break;
         }
 
-        cv::waitKey((1.0f/60.0f) * 1000);
+        cv::imshow("Frame", frame);
+
+        cv::waitKey((1.0f/30.0f) * 1000);
 
         fps.update();
 
